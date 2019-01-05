@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ConfigData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CellMf />
+  <Server>172.16.0.34</Server>
+  <ServerDBName>module_sr_prod</ServerDBName>
+  <ServerUser>ivquery</ServerUser>
+  <ServerPass>QUS5aS+kR3o=</ServerPass>
+  <SQL>
+    select LOTSN AS Barcode,Pmax AS PeakWat,FF AS FF,Voc AS Voc,Isc AS Isc,Vpm AS MaxVmpp,Ipm AS MaxImpp,
+    ModuleAccessories.AccessorySn from  DataChainDCIVResults with(nolock) inner join ModuleAccessories with(nolock)
+    on  DataChainDCIVResults.LotId = ModuleAccessories.LotId
+    where  LOTSN = @Barcode  and  isnew = 1
+  </SQL>
+  <OracleServer>127.0.0.1</OracleServer>
+  <OracleServerDBName>xe</OracleServerDBName>
+  <OracleServerUser>oracle</OracleServerUser>
+  <OracleServerPass>81E8mmZgy1o=</OracleServerPass>
+  <OracleServerPort>1521</OracleServerPort>
+  <OracleSQL>select glass_sn Barcode,a.pmax PeakWat,a.ff FF,a.voc VOC,a.isc Isc,a.vm MaxVmpp,a.im MaxImpp,a.accessorysn AccessorySn from ia_002_tabmoduleinfo a where a.glass_sn= :Barcode</OracleSQL>
+  <ModuleNo>JKM215PP-60</ModuleNo>
+  <SysTitle>TagIssuer</SysTitle>
+  <RfidPort />
+  <Pwd>nK7IBA5iKAbdymlGwmGDRg==</Pwd>
+  <AccessFilepath>9-1702056.mdb</AccessFilepath>
+  <ReplaceRules>19150215-A,19140215-B,19130215-C,59130215-D,19050215-E</ReplaceRules>
+  <ExcelFilepath>data.xlsx</ExcelFilepath>
+  <SourType>0</SourType>
+  <ReadCheck>true</ReadCheck>
+  <Version>1</Version>
+  <Factory>Jingke</Factory>
+</ConfigData>

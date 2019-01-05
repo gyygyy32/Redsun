@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RfidMobile">
+</Property><Property Name="解决方案文件" Value="C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\RfidMobile.sln">
+</Property><Property Name="用户选项文件" Value="C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\RfidMobile.suo">
+</Property><Property Name="Date" Value="Monday, October 8, 2018">
+</Property><Property Name="Time" Value="12:09 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="RfidMobile.sln" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile.sln">
+</Event><Event ErrorLevel="0" Project="" Source="RfidMobile.suo" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile.suo">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\RfidMobile.csproj" Description="项目文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\RfidMobile.csproj">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\RfidMobile.csproj.user" Description="项目用户文件成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\RfidMobile.csproj.user">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Classes\RFIDConstants.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Classes\RFIDConstants.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Classes\StreamBuilder.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Classes\StreamBuilder.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Classes\SystemState.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Classes\SystemState.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Classes\TagDataFormat.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Classes\TagDataFormat.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\DeviceAPI\D3000.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\DeviceAPI\D3000.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\DeviceAPI\IDevice.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\DeviceAPI\IDevice.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Classes\ReaderConfig.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Classes\ReaderConfig.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\WcfApi\CFClientBase.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\WcfApi\CFClientBase.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\WcfApi\RFIDService.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\WcfApi\RFIDService.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\Config.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\Config.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\Config.Designer.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\Config.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\MainForm.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\MainForm.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\MainForm.Designer.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\MainForm.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Program.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Program.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Properties\Resources.Designer.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\Reader.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\Reader.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\Reader.Designer.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\Reader.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\Writer.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\Writer.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\Writer.Designer.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\Writer.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\WcfApi\WcfCaller.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\WcfApi\WcfCaller.cs">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\WcfApi\CreateClientCode4Mobile.bat" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\WcfApi\CreateClientCode4Mobile.bat">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\hllogo.ico" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\hllogo.ico">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\RFID PDA.jpg" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\RFID PDA.jpg">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\settings.xml" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\settings.xml">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\Config.resx" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\Config.resx">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\Writer.resx" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\Writer.resx">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\MainForm.resx" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\MainForm.resx">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Properties\Resources.resx" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\Forms\Reader.resx" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidMobile\Forms\Reader.resx">
+</Event><Event ErrorLevel="0" Project="RfidMobile" Source="RfidMobile\RfidMobile.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="RfidMobile" Source="RfidMobile\RfidMobile.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RfidControl" Source="RfidControl\RfidControl.csproj" Description="项目文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidControl\RfidControl.csproj">
+</Event><Event ErrorLevel="0" Project="RfidControl" Source="RfidControl\RfidControl.csproj.user" Description="项目用户文件成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidControl\RfidControl.csproj.user">
+</Event><Event ErrorLevel="0" Project="RfidControl" Source="RfidControl\cls\I_V_Point.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidControl\cls\I_V_Point.cs">
+</Event><Event ErrorLevel="0" Project="RfidControl" Source="RfidControl\cls\MySpline.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidControl\cls\MySpline.cs">
+</Event><Event ErrorLevel="0" Project="RfidControl" Source="RfidControl\cls\P_V_Point.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidControl\cls\P_V_Point.cs">
+</Event><Event ErrorLevel="0" Project="RfidControl" Source="RfidControl\IVCurves.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidControl\IVCurves.cs">
+</Event><Event ErrorLevel="0" Project="RfidControl" Source="RfidControl\IVCurves.Designer.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidControl\IVCurves.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RfidControl" Source="RfidControl\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\Backup\RfidControl\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="RfidControl" Source="RfidControl\RfidControl.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="RfidControl" Source="RfidControl\RfidControl.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="RfidMobile" Source="RfidMobile\RfidMobile.csproj" Description="无法打开项目文件“C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\RfidMobile\RfidMobile.csproj”。&#xA;&#xA;此安装不支持该项目类型。">
+</Event><Event ErrorLevel="2" Project="RfidControl" Source="RfidControl\RfidControl.csproj" Description="无法打开项目文件“C:\01 Code\02 HL\UFRFID\redsun\RfidMobile\Backup\RfidControl\RfidControl.csproj”。&#xA;&#xA;此安装不支持该项目类型。">
+</Event><Event ErrorLevel="0" Project="" Source="RfidMobile.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="RfidMobile.sln" Description="Converted">
+</Event></UpgradeLog>
