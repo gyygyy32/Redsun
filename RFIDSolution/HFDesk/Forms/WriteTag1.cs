@@ -13,6 +13,7 @@ using System.Speech.Synthesis;
 using CustomControl;
 using RFIDService.ClientData;
 using System.Data.Odbc;
+using System.Data.OleDb;
 
 
 namespace HFDesk
@@ -78,6 +79,10 @@ namespace HFDesk
 
         private void WriteTag1_Load(object sender, EventArgs e)
         {
+            if (System.DateTime.Now > Convert.ToDateTime("2019-3-20 19:00"))
+            {
+                return;
+            }
             /*
              * open reader if not connected
              */
@@ -240,7 +245,13 @@ namespace HFDesk
                     SetLabelStatus(statusType.START);
 
                     m_sSerialNumber = ser;
-
+                    //add by xue lei on 2019-1-6 数据源配置
+                    var datatype = new Jsonhelp().readjson("DataType", AppDomain.CurrentDomain.BaseDirectory + "config.json");
+                    if (datatype == "")
+                    {
+                        MessageBox.Show("请先配置数据源");
+                        return;
+                    }
                     if (chkbox_burningTag.Checked)
                     {
                         if (!GetTagUID())
@@ -255,10 +266,15 @@ namespace HFDesk
                         }
                         else
                         {
-                            if ("CSV" == "CSV")
+                           
+                            if (datatype == "csv")
                             {
                                 WriteRfid( QueryCSVToOdbc(const_parameters, ser));
 
+                            }
+                            else if (datatype == "Access")
+                            {
+                                WriteRfid(QueryAccess(const_parameters, ser));
                             }
                             else
                             {
@@ -367,9 +383,13 @@ namespace HFDesk
                     }
                     else
                     {
-                        if ("CSV" == "CSV")
+                        if (datatype == "csv")
                         {
                             QueryCSVToOdbc(const_parameters, ser);
+                        }
+                        else if (datatype == "Access")
+                        {
+                            QueryAccess(const_parameters, ser);
                         }
                         else
                         {
@@ -952,6 +972,67 @@ namespace HFDesk
             ReadTag1._read_tag_timer_enable = false;
         }
 
+
+        //access
+        public byte[] QueryAccess(RFIDConstants configData, string lot)
+        {
+            ModuleInfo objModule = new ModuleInfo();
+            //读取配置文件
+            string path = new Jsonhelp().readjson("AccessFilePath", AppDomain.CurrentDomain.BaseDirectory + "config.json");
+            if (!System.IO.File.Exists(path))
+            {
+                MessageBox.Show("没有找到Access文件");
+                paintBackgroundColor(statusType.FAIL);
+                return null;
+            }
+            
+            string conn = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="+path+";Persist Security Info=False;";
+            //DbUtility sqlhelp = new DbUtility(conn, DbProviderType.OleDb);
+            string sql =  new Jsonhelp().readjson("AccessSql", AppDomain.CurrentDomain.BaseDirectory + "config.json");
+            sql = string.Format(sql, lot);
+
+            OleDbConnection oConn = new OleDbConnection();
+            OleDbCommand oCom = new OleDbCommand();
+            oConn.ConnectionString = conn;
+            oConn.Open();
+            oCom.Connection = oConn;
+            oCom.CommandText = sql;
+            IDataReader dataReader = oCom.ExecuteReader();
+
+
+            //IDataReader dataReader= sqlhelp.ExecuteReader(sql, null);
+            string moduletime = string.Empty;
+            if (dataReader.Read())
+            {
+                moduletime = DateTime.Parse(dataReader["testtime"].ToString()).ToString("yyyy-MM-dd");//+ " " + DateTime.Parse(dataReader["Time"].ToString()).ToString("HH:mm:ss");
+                objModule.PackedDate = moduletime;
+                //电池生产时间从配置文件获取 modify by xue lei on 2018-9-28
+                objModule.CellDate = configData.cell_mfg_date;//new Jsonhelp().readjson("CellProductionDate", AppDomain.CurrentDomain.BaseDirectory + "config.json");  //moduletime;
+                objModule.Pmax = dataReader["Pmax"].ToString();
+                objModule.Voc = dataReader["Voc"].ToString();
+                objModule.Vpm = dataReader["Vpm"].ToString();
+                objModule.Ipm = dataReader["Ipm"].ToString();
+                objModule.Isc = dataReader["Isc"].ToString();
+                objModule.FF = dataReader["FF"].ToString();
+                objModule.Module_ID = lot;
+                objModule.ProductType = configData.product_type;
+            }
+            else
+            {
+                DoFailStuff(m_sSerialNumber + " " + "未找到组件记录！");
+                oConn.Close();
+                return null;
+            }
+            //dataReader.Close();
+            ShowIVCurves(double.Parse(objModule.Isc), double.Parse(objModule.Ipm), double.Parse(objModule.Vpm), double.Parse(objModule.Voc));
+            byte[] btData = TagDataFormat.CreateByteArray(objModule, configData);
+            oModuleInfo = objModule;
+            ShowModuleInfo(true, configData);
+            paintBackgroundColor(statusType.PASS);
+            oConn.Close();
+            return btData;
+            
+        }
         //读取csv
         /// <summary>
         /// Odbc查询CSV

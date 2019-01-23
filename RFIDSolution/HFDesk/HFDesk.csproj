@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="helpClass\CCommondMethod.cs" />
     <Compile Include="helpClass\common.cs" />
+    <Compile Include="helpClass\dbhelp.cs" />
     <Compile Include="helpClass\DealINI.cs" />
     <Compile Include="helpClass\Hardwares.cs" />
     <Compile Include="helpClass\ISO15693Commands.cs" />

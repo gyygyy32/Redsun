@@ -16,8 +16,17 @@ namespace HFDesk
             {
                 var json = r.ReadToEnd();
                 var jobj = JObject.Parse(json);
+                if (jobj[tagname] != null)
+                {
+                    return jobj[tagname].ToString();
+                }
+                else
+                {
+                    return "";
+                }
+
                 //string value = jobj.Properties().Select(item=> item.Name="CSVFilePath")
-                return jobj[tagname].ToString();
+                //return jobj[tagname].ToString();
             }
         }
 

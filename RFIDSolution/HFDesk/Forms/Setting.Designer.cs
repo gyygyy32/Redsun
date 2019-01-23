@@ -35,13 +35,18 @@
             this.btnCVSSelect = new System.Windows.Forms.Button();
             this.txtCSVPath = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabExcel = new System.Windows.Forms.TabPage();
+            this.tabAccess = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdbCsv = new System.Windows.Forms.RadioButton();
+            this.rdbAccess = new System.Windows.Forms.RadioButton();
+            this.btnAccessSelect = new System.Windows.Forms.Button();
+            this.txtAccessPath = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabCSV.SuspendLayout();
+            this.tabAccess.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +76,7 @@
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabCSV);
-            this.tabControl2.Controls.Add(this.tabExcel);
+            this.tabControl2.Controls.Add(this.tabAccess);
             this.tabControl2.Location = new System.Drawing.Point(8, 71);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -117,18 +122,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "CSV文件路径：";
             // 
-            // tabExcel
+            // tabAccess
             // 
-            this.tabExcel.Location = new System.Drawing.Point(4, 25);
-            this.tabExcel.Name = "tabExcel";
-            this.tabExcel.Padding = new System.Windows.Forms.Padding(3);
-            this.tabExcel.Size = new System.Drawing.Size(791, 263);
-            this.tabExcel.TabIndex = 1;
-            this.tabExcel.Text = "Excel";
-            this.tabExcel.UseVisualStyleBackColor = true;
+            this.tabAccess.Controls.Add(this.btnAccessSelect);
+            this.tabAccess.Controls.Add(this.txtAccessPath);
+            this.tabAccess.Controls.Add(this.label2);
+            this.tabAccess.Location = new System.Drawing.Point(4, 25);
+            this.tabAccess.Name = "tabAccess";
+            this.tabAccess.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAccess.Size = new System.Drawing.Size(791, 263);
+            this.tabAccess.TabIndex = 1;
+            this.tabAccess.Text = "Access";
+            this.tabAccess.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rdbAccess);
             this.groupBox1.Controls.Add(this.rdbCsv);
             this.groupBox1.Location = new System.Drawing.Point(8, 5);
             this.groupBox1.Name = "groupBox1";
@@ -147,6 +156,46 @@
             this.rdbCsv.TabStop = true;
             this.rdbCsv.Text = "csv";
             this.rdbCsv.UseVisualStyleBackColor = true;
+            this.rdbCsv.Click += new System.EventHandler(this.rdbCsv_Click);
+            // 
+            // rdbAccess
+            // 
+            this.rdbAccess.AutoSize = true;
+            this.rdbAccess.Location = new System.Drawing.Point(145, 24);
+            this.rdbAccess.Name = "rdbAccess";
+            this.rdbAccess.Size = new System.Drawing.Size(76, 19);
+            this.rdbAccess.TabIndex = 1;
+            this.rdbAccess.TabStop = true;
+            this.rdbAccess.Text = "Access";
+            this.rdbAccess.UseVisualStyleBackColor = true;
+            
+            this.rdbAccess.Click += new System.EventHandler(this.rdbAccess_Click);
+            // 
+            // btnAccessSelect
+            // 
+            this.btnAccessSelect.Location = new System.Drawing.Point(463, 77);
+            this.btnAccessSelect.Name = "btnAccessSelect";
+            this.btnAccessSelect.Size = new System.Drawing.Size(75, 25);
+            this.btnAccessSelect.TabIndex = 5;
+            this.btnAccessSelect.Text = "选择";
+            this.btnAccessSelect.UseVisualStyleBackColor = true;
+            this.btnAccessSelect.Click += new System.EventHandler(this.btnAccessSelect_Click);
+            // 
+            // txtAccessPath
+            // 
+            this.txtAccessPath.Location = new System.Drawing.Point(64, 77);
+            this.txtAccessPath.Name = "txtAccessPath";
+            this.txtAccessPath.Size = new System.Drawing.Size(384, 25);
+            this.txtAccessPath.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(61, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 15);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Access文件路径：";
             // 
             // Setting
             // 
@@ -164,6 +213,8 @@
             this.tabControl2.ResumeLayout(false);
             this.tabCSV.ResumeLayout(false);
             this.tabCSV.PerformLayout();
+            this.tabAccess.ResumeLayout(false);
+            this.tabAccess.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -179,8 +230,12 @@
         private System.Windows.Forms.Button btnCVSSelect;
         private System.Windows.Forms.TextBox txtCSVPath;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabExcel;
+        private System.Windows.Forms.TabPage tabAccess;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdbCsv;
+        private System.Windows.Forms.RadioButton rdbAccess;
+        private System.Windows.Forms.Button btnAccessSelect;
+        private System.Windows.Forms.TextBox txtAccessPath;
+        private System.Windows.Forms.Label label2;
     }
 }

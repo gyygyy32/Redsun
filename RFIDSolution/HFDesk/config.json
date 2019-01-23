@@ -1,4 +1,6 @@
 {
-	"CSVFilePath":"c:/dsd/"
-	"CellProductionDate":"2018-02-21"
+	"CSVFilePath":"c:/dsd/",
+	"CellProductionDate":"2018-02-21",
+	"DataType":"Access",
+	"AccessSql":"SELECT ID,CDate(Test_Date &' '& test_time) testtime ,Pmax, FF, Voc, Isc, Vpm, Ipm FROM SunData where ID   = '{0}';"
 }
